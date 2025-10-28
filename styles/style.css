@@ -1,19 +1,47 @@
+/* Font */
+
+/* Color Variables */
+:root {
+    --light-grey: #0A222C;
+    --dark-grey: #071820;
+    --white: #FFFFFF;
+}
+
+
+/* Basic Styling */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
 }
 
+
+/* General Styling */
 header,
 footer {
-    background-color: #0A222C;
+    background: var(--light-grey);
     height: 112px;
     width: 100dvw;
+    margin: 0;
 }
 
 main {
-    background-color: #071820;
+    background: var(--dark-grey)
 }
 
+.logo {
+    width: 250px;
+    height: 80px;
+}
+
+
+
+
+/* Headlines */
 h1 {
     margin: 0;
     text-align: center;
+    color: var(--white);
 }
