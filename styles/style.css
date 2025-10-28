@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+}
+
+header,
+footer {
+    background-color: #0A222C;
+    height: 112px;
+    width: 100dvw;
+}
+
+main {
+    background-color: #071820;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+}
