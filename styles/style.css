@@ -64,13 +64,30 @@ h1 {
     color: var(--white);
 }
 
+
+/* Dialog */
 #DialogShowImg {
-    height: 300px;
-    width: 350px;
+    height: 80dvh;
+    width: 30dvw;
     background: var(--light-green);
+    border-radius: 15px;
+    border-color: var(--dark-green);
+    box-sizing: border-box;
+}
+
+#DialogImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+}
+
+#DialogImg img {
+    border-radius: 15px;
 }
 
 #HeaderDialog {
+    height: 80px;
     display: flex;
     justify-content: end;
 }
@@ -81,6 +98,7 @@ h1 {
 }
 
 #FooterDialog {
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: end;
