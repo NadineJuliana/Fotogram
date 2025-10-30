@@ -1,4 +1,16 @@
 /* Font */
+@font-face {
+    font-display: swap;
+    font-family: 'Shadows Into Light Two';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/shadows-into-light-two-v19-latin-regular.woff2') format('woff2');
+}
+
+
+* {
+    color: #FFFFFF;
+}
 
 /* Color Variables */
 :root {
@@ -15,6 +27,7 @@ html {
 
 body {
     margin: 0;
+    font-family: 'Shadows Into Light Two';
 }
 
 
@@ -64,6 +77,11 @@ h1 {
     color: var(--white);
 }
 
+h2 {
+    font-size: 20px;
+    margin: 0;
+    color: var(--white);
+}
 
 /* Dialog */
 #DialogShowImg {
@@ -90,6 +108,7 @@ h1 {
     height: 80px;
     display: flex;
     justify-content: end;
+    flex-direction: row-reverse;
 }
 
 .DialogCloseButton {
