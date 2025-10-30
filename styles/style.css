@@ -23,7 +23,7 @@ header,
 footer {
     background: var(--light-green);
     height: 120px;
-    width: 100dvw;
+    width: 100%;
     margin: 0;
     display: flex;
 }
@@ -36,7 +36,7 @@ footer {
 
 main {
     background: var(--dark-green);
-    width: 100dvw;
+    width: 100%;
 }
 
 #dioGallery {
@@ -50,7 +50,7 @@ main {
 }
 
 #dioImages {
-    width: 150px;
+    width: 200px;
     height: 250px;
     padding: 8px;
     border-radius: 25px;
