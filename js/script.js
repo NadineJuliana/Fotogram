@@ -1,4 +1,4 @@
-const dioImages = [
+const DIO_IMAGES = [
     "img/dio0.jpg",
     "img/dio1.jpg",
     "img/dio2.jpg",
@@ -18,10 +18,20 @@ const dioImages = [
 ];
 
 function renderImages(){
-    const imgRef = document.getElementById('dioGallery');
+    const IMG_REF = document.getElementById('DioGallery');
 
-    for (let c= 0; c < dioImages.length; c++){
-        imgRef.innerHTML += `<img id="dioImages" src="${dioImages[c]}" alt="">`;
+    for (let c= 0; c < DIO_IMAGES.length; c++){
+        IMG_REF.innerHTML += `<img id="DioImages" src="${DIO_IMAGES[c]}" alt="">`;
     }
 }
 
+
+const DIALOG_IMG_REF = document.getElementById('DialogShowImg');
+
+function openDialog() {
+    DIALOG_IMG_REF.showModal();
+}
+
+function closeDialog(){
+    DIALOG_IMG_REF.close();
+}
