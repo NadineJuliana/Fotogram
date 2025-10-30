@@ -1,3 +1,5 @@
+// Arrays
+
 const DIO_IMAGES = [
     "img/dio0.jpg",
     "img/dio1.jpg",
@@ -36,6 +38,14 @@ const DIO_IMAGES_TITLES = [
     "Enjoy the sunset walk trough the forest."
 ]
 
+// global Variables
+const DIALOG_TITLES = document.getElementById('HeaderDialog')
+const ARROW_BACKWARD = document.getElementById('ArrowLeft')
+const ARROW_FORWARD = document.getElementById('ArrowRight')
+const DIALOG_COUNTER = document.getElementById('DialogCounter')
+
+
+// funtions
 function renderImages(){
     const IMG_REF = document.getElementById('DioGallery');
 
@@ -51,6 +61,10 @@ function openDialog(listindex) {
     const DIALOG_IMG_REF = document.getElementById('DialogImg')
     DIALOG_IMG_REF.innerHTML = `<img id="BigImg${listindex}" src="${DIO_IMAGES[listindex]}" alt="">`
     DIALOG_REF.showModal();
+    DIALOG_TITLES.innerHTML += `<h2>${DIO_IMAGES_TITLES[listindex]}</h2>`;
+    ARROW_BACKWARD.innerHTML = `<img class="DialogNavButton" src="img/arrow-left.png" alt="Arrow Left">`;
+    DIALOG_COUNTER.innerHTML = ` <p>${listindex +1} /${DIO_IMAGES.length}</p>`;
+    ARROW_FORWARD.innerHTML = `<img class="DialogNavButton" src="img/arrow-right.png" alt="Arrow Right">`;
 }
 
 function closeDialog(){
