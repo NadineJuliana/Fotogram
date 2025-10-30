@@ -21,17 +21,20 @@ function renderImages(){
     const IMG_REF = document.getElementById('DioGallery');
 
     for (let c= 0; c < DIO_IMAGES.length; c++){
-        IMG_REF.innerHTML += `<img id="DioImages" src="${DIO_IMAGES[c]}" alt="">`;
+        IMG_REF.innerHTML += `<img id="DioImages" onclick="openDialog(${c})" src="${DIO_IMAGES[c]}" alt="">`;
     }
 }
 
 
-const DIALOG_IMG_REF = document.getElementById('DialogShowImg');
+const DIALOG_REF = document.getElementById('DialogShowImg');
 
-function openDialog() {
-    DIALOG_IMG_REF.showModal();
+function openDialog(listindex) {
+    const DIALOG_IMG_REF = document.getElementById('DialogImg')
+    DIALOG_IMG_REF.innerHTML = `<img id="BigImg${listindex}" src="${DIO_IMAGES[listindex]}" alt="">`
+    DIALOG_REF.showModal();
 }
 
 function closeDialog(){
-    DIALOG_IMG_REF.close();
+    DIALOG_REF.close();
 }
+
