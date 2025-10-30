@@ -17,6 +17,25 @@ const DIO_IMAGES = [
     "img/dio15.jpg",
 ];
 
+const DIO_IMAGES_TITLES = [
+    "Smile into the camera for no reason.",
+    "Nice view over the Ammersee.",
+    "Today we make a side trip trough the Forest. ",
+    "Just enjoy the summer sunset.",
+    "Oh look, what's on the side walk?",
+    "Why this dog is so big?",
+    "If I close my eyes, no one could see me.",
+    "Always need to wait for my Parents.",
+    "A beautiful trip trough flowers along the creek.",
+    "Todays trip start on the Windachtal.",
+    "Beautiful side trip to the Ammersee.",
+    "Look this avenue. It will be a long trip today.",
+    "Playing in the snow is my favourite action.",
+    "Discover a new avenue today.",
+    "Look how brave I can be.",
+    "Enjoy the sunset walk trough the forest."
+]
+
 function renderImages(){
     const IMG_REF = document.getElementById('DioGallery');
 
