@@ -28,7 +28,7 @@ footer {
     display: flex;
 }
 
-.logo {
+.Logo {
     width: 200px;
     height: 80px;
     padding: 18px 0px 24px 24px;
@@ -39,7 +39,7 @@ main {
     width: 100%;
 }
 
-#dioGallery {
+#DioGallery {
     margin: 0;
     display: flex;
     flex-wrap: wrap;
@@ -49,7 +49,7 @@ main {
     padding: 20px 20px 45px 20px;
 }
 
-#dioImages {
+#DioImages {
     width: 200px;
     height: 250px;
     padding: 8px;
@@ -64,9 +64,32 @@ h1 {
     color: var(--white);
 }
 
+#DialogShowImg {
+    height: 300px;
+    width: 350px;
+    background: var(--light-green);
+}
 
+#HeaderDialog {
+    display: flex;
+    justify-content: end;
+}
 
+.DialogCloseButton {
+    height: 32px;
+    width: 32px;
+}
 
+#FooterDialog {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.DialogNavButton {
+    height: 48px;
+    width: 48px;
+}
 
 
 /* Media Queries */
