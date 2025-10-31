@@ -11,21 +11,29 @@
 </head>
 
 <body onload="renderImages()">
+
     <header>
         <img class="Logo" src="img/Fotogram_Logo.svg" alt="Fotogram Logo">
     </header>
+
     <main>
 
         <h1>Dios Adventures</h1>
-
         <section id="DioGallery">
             <!-- img -->
         </section>
 
         <dialog id="DialogShowImg" aria-labelledby="HeaderDialogRef">
             <header id="HeaderDialog">
-                <div id="HeaderDialogRef"></div>
-                <img class="DialogCloseButton" onclick="closeDialog()" src="img/close.png" alt="Close Button">
+
+                <div id="HeaderDialogRef">
+                    <!-- Titles -->
+                </div>
+                <div id="DialogCloseButton">
+                    <img class="DialogCloseButton" onclick="closeDialog()" src="img/close.png" alt="Close Button">
+                    <!-- Close Button Img-->
+                </div>
+                
             </header>
 
             <section id="DialogImg">
@@ -33,13 +41,25 @@
             </section>
 
             <footer id="FooterDialog">
-                <div id="ArrowLeft"></div>
-                <div id="DialogCounter"></div>
-                <div id="ArrowRight"></div>
+                <div id="ArrowLeft">
+                    <!-- Arrow Left Img -->
+                </div>
+                <div id="DialogCounter">
+                    <!-- Counter -->
+                </div>
+                <div id="ArrowRight">
+                    <!-- Arrow Right Img -->
+                </div>
             </footer>
+
         </dialog>
+
     </main>
-    <footer></footer>
+
+    <footer>
+
+    </footer>
+
 </body>
 
 </html>
