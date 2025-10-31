@@ -8,10 +8,6 @@
 }
 
 
-* {
-    color: #FFFFFF;
-}
-
 /* Color Variables */
 :root {
     --light-green: #012f11;
@@ -89,7 +85,7 @@ h2 {
     width: 30dvw;
     background: var(--light-green);
     border-radius: 15px;
-    border-color: var(--dark-green);
+    border: 2px solid var(--dark-green);
     box-sizing: border-box;
 }
 
@@ -107,8 +103,7 @@ h2 {
 #HeaderDialog {
     height: 80px;
     display: flex;
-    justify-content: end;
-    flex-direction: row-reverse;
+    justify-content: space-between;
 }
 
 .DialogCloseButton {
