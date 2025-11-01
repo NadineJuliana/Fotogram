@@ -59,7 +59,7 @@ function renderHeader(){
 
 function renderFooter(){
     ARROW_BACKWARD.innerHTML = `<img class="dialogNavButton" onclick="goBackward()" src="img/arrow-left.png" alt="Arrow Left">`;
-    DIALOG_COUNTER.innerHTML = ` <p id="CounterDialog">${ACTUAL_INDEX +1} /${DIO_IMAGES.length}</p>`;
+    DIALOG_COUNTER.innerHTML = ` <p id="CounterDialog" class="counterDialog">${ACTUAL_INDEX +1} /${DIO_IMAGES.length}</p>`;
     ARROW_FORWARD.innerHTML = `<img class="dialogNavButton" onclick="goForward()" src="img/arrow-right.png" alt="Arrow Right">`;
 }
 
