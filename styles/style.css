@@ -30,13 +30,26 @@ footer {
     width: 100%;
     margin: 0;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.Logo {
-    width: 200px;
+.logo {
+    width: 300px;
     height: 80px;
-    padding: 18px 0px 24px 24px;
 }
+
+.footerLogos {
+    height: 40px;
+    width: 40px;
+    margin: 16px;
+}
+
+.footerLogos:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px var(--white));
+}
+
 
 main {
     background: var(--dark-green);
@@ -51,7 +64,7 @@ main {
     justify-content: center;
     align-items: center;
     padding: 20px 20px 45px 20px;
-    
+
 }
 
 .dioImages {
@@ -170,6 +183,11 @@ dialog::backdrop {
 }
 
 @media (max-width: 425px) {
+    .logo {
+        width: 250px;
+        height: 80px;
+    }
+
     dialog {
         height: 60vh;
         width: 80vw;
