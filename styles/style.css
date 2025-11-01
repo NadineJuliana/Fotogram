@@ -1,4 +1,3 @@
-/* Font */
 @font-face {
     font-display: swap;
     font-family: 'Shadows Into Light Two';
@@ -7,16 +6,12 @@
     src: url('../fonts/shadows-into-light-two-v19-latin-regular.woff2') format('woff2');
 }
 
-
-/* Color Variables */
 :root {
     --light-green: #012f11;
     --dark-green: #052313;
     --white: #FFFFFF;
 }
 
-
-/* Basic Styling */
 html {
     scroll-behavior: smooth;
 }
@@ -26,8 +21,6 @@ body {
     font-family: 'Shadows Into Light Two';
 }
 
-
-/* General Styling */
 header,
 footer {
     background: var(--light-green);
@@ -48,7 +41,7 @@ main {
     width: 100%;
 }
 
-#DioGallery {
+.dioGallery {
     margin: 0;
     display: flex;
     flex-wrap: wrap;
@@ -58,19 +51,24 @@ main {
     padding: 20px 20px 45px 20px;
 }
 
-#DioImages {
+.dioGallery:hover {
+    cursor: pointer;
+    transition: ease-in 0.5s;
+}
+
+.dioImages {
     width: 200px;
     height: 250px;
     padding: 8px;
     border-radius: 25px;
 }
 
-/* Headlines */
 h1 {
     margin: 0;
     padding: 25px 0px;
     text-align: center;
     color: var(--white);
+    font-size: 32px;
 }
 
 h2 {
@@ -79,58 +77,109 @@ h2 {
     color: var(--white);
 }
 
-/* Dialog */
-#DialogShowImg {
-    height: 80dvh;
-    width: 30dvw;
+dialog {
+    height: 90vh;
+    width: 50vw;
     background: var(--light-green);
     border-radius: 15px;
-    border: 2px solid var(--dark-green);
-    box-sizing: border-box;
+    border: 2px var(--dark-green);
 }
 
-#DialogImg {
+/* dialog::backdrop {
+    background: var(--dark-green);
+
+} */
+
+.dialogImg {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 8px;
+    height: 80%;
+    width: 100%;
 }
 
-#DialogImg img {
+.dialogImg img {
     border-radius: 15px;
+    height: 80%;
+    width: 80%;
 }
 
-#HeaderDialog {
-    height: 80px;
+.headerDialog {
+    height: 60px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.DialogCloseButton {
+.dialogCloseButton {
     height: 32px;
     width: 32px;
 }
 
-#FooterDialog {
-    height: 80px;
+.footerDialog {
+    height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: end;
+    color: var(--white);
 }
 
-.DialogNavButton {
+.dialogNavButton {
     height: 48px;
     width: 48px;
 }
 
+@media (max-width: 1023px) {
+    dialog {
+        height: 80vh;
+        width: 60vw;
+    }
+}
 
-/* Media Queries */
-@media (max-width: 1280px) {}
+@media (max-width: 767px) {
+    h2 {
+        font-size: 16px;
+    }
 
+    dialog {
+        height: 70vh;
+        width: 70vw;
+    }
 
+    .dialogCloseButton {
+        height: 20px;
+        width: 20px;
+    }
 
+    .dialogNavButton {
+        height: 40px;
+        width: 40px;
+    }
+}
 
+@media (max-width: 425px) {
+    dialog {
+        height: 60vh;
+        width: 80vw;
+    }
 
+    .dialogCloseButton {
+        height: 16px;
+        width: 16px;
+    }
 
+    .dialogNavButton {
+        height: 32px;
+        width: 32px;
+    }
 
-@media (max-width: 767px) {}
+    .counterDialog {
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .footerDialog {
+        height: 48px;
+        align-items: center;
+    }
+}
