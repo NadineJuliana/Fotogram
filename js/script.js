@@ -63,7 +63,7 @@ function openDialog(listindex) {
 
 function renderHeader(){
     DIALOG_TITLES.innerHTML = `<h2>${DIO_IMAGES_TITLES[ACTUAL_INDEX]}</h2>`;
-    CLOSE_HEADER.innerHTML = `<img class="DialogCloseButton" onclick="closeDialog()" src="img/close.png" alt="Close Button">`;
+    CLOSE_HEADER.innerHTML = `<img class="dialogCloseButton" onclick="closeDialog()" src="img/close.png" alt="Close Button">`;
 }
 
 function renderFooter(){
