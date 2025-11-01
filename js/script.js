@@ -52,6 +52,15 @@ function renderImages(){
     }
 }
 
+function openDialog(listindex) {
+    const DIALOG_IMG_REF = document.getElementById('DialogImg');
+    DIALOG_IMG_REF.innerHTML = `<img id="BigImg" src="${DIO_IMAGES[listindex]}" alt="">`;
+    ACTUAL_INDEX = listindex;
+    renderHeader();
+    renderFooter();
+    DIALOG_REF.showModal();
+}
+
 function renderHeader(){
     DIALOG_TITLES.innerHTML = `<h2>${DIO_IMAGES_TITLES[ACTUAL_INDEX]}</h2>`;
     CLOSE_HEADER.innerHTML = `<img class="DialogCloseButton" onclick="closeDialog()" src="img/close.png" alt="Close Button">`;
@@ -61,15 +70,6 @@ function renderFooter(){
     ARROW_BACKWARD.innerHTML = `<img class="dialogNavButton" onclick="goBackward()" src="img/arrow-left.png" alt="Arrow Left">`;
     DIALOG_COUNTER.innerHTML = ` <p id="CounterDialog" class="counterDialog">${ACTUAL_INDEX +1} /${DIO_IMAGES.length}</p>`;
     ARROW_FORWARD.innerHTML = `<img class="dialogNavButton" onclick="goForward()" src="img/arrow-right.png" alt="Arrow Right">`;
-}
-
-function openDialog(listindex) {
-    const DIALOG_IMG_REF = document.getElementById('DialogImg');
-    DIALOG_IMG_REF.innerHTML = `<img id="BigImg" src="${DIO_IMAGES[listindex]}" alt="">`;
-    renderHeader();
-    renderFooter();
-    ACTUAL_INDEX = listindex;
-    DIALOG_REF.showModal();
 }
 
 function closeDialog(){
