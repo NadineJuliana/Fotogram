@@ -10,6 +10,7 @@
     --light-green: #012f11;
     --dark-green: #052313;
     --white: #FFFFFF;
+    --dark-green-transparent: #052313b9;
 }
 
 html {
@@ -53,7 +54,6 @@ main {
 
 .dioGallery:hover {
     cursor: pointer;
-    transition: ease-in 0.5s;
 }
 
 .dioImages {
@@ -85,10 +85,9 @@ dialog {
     border: 2px var(--dark-green);
 }
 
-/* dialog::backdrop {
-    background: var(--dark-green);
-
-} */
+dialog::backdrop {
+    background: var(--dark-green-transparent);
+}
 
 .dialogImg {
     display: flex;
@@ -116,6 +115,10 @@ dialog {
     width: 32px;
 }
 
+.dialogCloseButton:hover {
+    cursor: pointer;
+}
+
 .footerDialog {
     height: 60px;
     display: flex;
@@ -127,6 +130,10 @@ dialog {
 .dialogNavButton {
     height: 48px;
     width: 48px;
+}
+
+.dialogNavButton:hover {
+    cursor: pointer;
 }
 
 @media (max-width: 1023px) {
@@ -147,8 +154,8 @@ dialog {
     }
 
     .dialogCloseButton {
-        height: 20px;
-        width: 20px;
+        height: 24px;
+        width: 24px;
     }
 
     .dialogNavButton {
@@ -164,8 +171,8 @@ dialog {
     }
 
     .dialogCloseButton {
-        height: 16px;
-        width: 16px;
+        height: 20px;
+        width: 20px;
     }
 
     .dialogNavButton {
