@@ -11,6 +11,7 @@
     --dark-green: #052313;
     --white: #FFFFFF;
     --dark-green-transparent: #052313b9;
+    --green-dropshadow: #0f6d30;
 }
 
 html {
@@ -50,17 +51,21 @@ main {
     justify-content: center;
     align-items: center;
     padding: 20px 20px 45px 20px;
-}
-
-.dioGallery:hover {
-    cursor: pointer;
+    
 }
 
 .dioImages {
     width: 200px;
     height: 250px;
-    padding: 8px;
+    margin: 8px;
     border-radius: 25px;
+}
+
+.dioImages:hover {
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    transform: scale(1.05);
+    box-shadow: 5px 5px 5px var(--green-dropshadow);
 }
 
 h1 {
