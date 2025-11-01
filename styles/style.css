@@ -1,3 +1,4 @@
+/* Fonts */
 @font-face {
     font-display: swap;
     font-family: 'Shadows Into Light Two';
@@ -6,6 +7,8 @@
     src: url('../fonts/shadows-into-light-two-v19-latin-regular.woff2') format('woff2');
 }
 
+
+/* Color Variables */
 :root {
     --light-green: #012f11;
     --dark-green: #052313;
@@ -14,6 +17,8 @@
     --green-dropshadow: #0f6d30;
 }
 
+
+/* General Styling */
 html {
     scroll-behavior: smooth;
 }
@@ -34,53 +39,13 @@ footer {
     align-items: center;
 }
 
-.logo {
-    width: 300px;
-    height: 80px;
-}
-
-.footerLogos {
-    height: 40px;
-    width: 40px;
-    margin: 16px;
-}
-
-.footerLogos:hover {
-    cursor: pointer;
-    filter: drop-shadow(0 0 5px var(--white));
-}
-
-
 main {
     background: var(--dark-green);
     width: 100%;
 }
 
-.dioGallery {
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 20px 45px 20px;
 
-}
-
-.dioImages {
-    width: 200px;
-    height: 250px;
-    margin: 8px;
-    border-radius: 25px;
-}
-
-.dioImages:hover {
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-    transform: scale(1.05);
-    box-shadow: 5px 5px 5px var(--green-dropshadow);
-}
-
+/* Headlines */
 h1 {
     margin: 0;
     padding: 25px 0px;
@@ -95,16 +60,58 @@ h2 {
     color: var(--white);
 }
 
+
+/* Content Styling */
+.logo {
+    width: 300px;
+    height: 80px;
+}
+
+.dioGallery {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 45px 20px;
+}
+
+.dioImages {
+    width: 200px;
+    height: 250px;
+    margin: 8px;
+    border-radius: 25px;
+}
+
+.footerLogos {
+    height: 40px;
+    width: 40px;
+    margin: 16px;
+}
+
+
+/* Hover Effects */
+.dioImages:hover {
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    transform: scale(1.05);
+    box-shadow: 5px 5px 5px var(--green-dropshadow);
+}
+
+.footerLogos:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px var(--white));
+}
+
+
+/* Dialog Styling */
 dialog {
     height: 90vh;
     width: 50vw;
     background: var(--light-green);
     border-radius: 15px;
     border: 2px var(--dark-green);
-}
-
-dialog::backdrop {
-    background: var(--dark-green-transparent);
 }
 
 .dialogImg {
@@ -133,10 +140,6 @@ dialog::backdrop {
     width: 32px;
 }
 
-.dialogCloseButton:hover {
-    cursor: pointer;
-}
-
 .footerDialog {
     height: 60px;
     display: flex;
@@ -150,10 +153,22 @@ dialog::backdrop {
     width: 48px;
 }
 
+
+/* Dialog Effects */
+dialog::backdrop {
+    background: var(--dark-green-transparent);
+}
+
+.dialogCloseButton:hover {
+    cursor: pointer;
+}
+
 .dialogNavButton:hover {
     cursor: pointer;
 }
 
+
+/* Media Queries */
 @media (max-width: 1023px) {
     dialog {
         height: 80vh;
