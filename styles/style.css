@@ -178,6 +178,10 @@ dialog::backdrop {
     .footerDialog {
         height: 50px;
     }
+
+    .dialogImg img {
+        max-width: 90%;
+    }
 }
 
 @media (max-width: 767px) {
@@ -196,10 +200,6 @@ dialog::backdrop {
 
     .footerDialog {
         height: 40px;
-    }
-
-    .dialogImg img {
-        max-width: 90%;
     }
 
     .dialogCloseButton {
