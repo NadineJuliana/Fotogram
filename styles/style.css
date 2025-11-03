@@ -42,6 +42,11 @@ footer {
 main {
     background: var(--dark-green);
     width: 100%;
+    min-height: calc(100vh - 240px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 
@@ -107,7 +112,7 @@ h2 {
 
 /* Dialog Styling */
 dialog {
-    height: 90vh;
+    height: 80vh;
     width: 50vw;
     background: var(--light-green);
     border-radius: 15px;
@@ -125,7 +130,7 @@ dialog {
 .dialogImg img {
     border-radius: 15px;
     height: 80%;
-    width: 80%;
+    object-fit: contain;
 }
 
 .headerDialog {
@@ -170,9 +175,8 @@ dialog::backdrop {
 
 /* Media Queries */
 @media (max-width: 1023px) {
-    dialog {
-        height: 80vh;
-        width: 60vw;
+    .footerDialog {
+        height: 50px;
     }
 }
 
@@ -182,8 +186,20 @@ dialog::backdrop {
     }
 
     dialog {
-        height: 70vh;
+        max-height: 70vh;
         width: 70vw;
+    }
+
+    .headerDialog {
+        height: 50px;
+    }
+
+    .footerDialog {
+        height: 40px;
+    }
+
+    .dialogImg img {
+        max-width: 90%;
     }
 
     .dialogCloseButton {
@@ -197,15 +213,18 @@ dialog::backdrop {
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 486px) {
     .logo {
         width: 250px;
         height: 80px;
     }
 
     dialog {
-        height: 60vh;
         width: 80vw;
+    }
+    
+    .dialogImg img {
+        width: 100%;
     }
 
     .dialogCloseButton {
@@ -221,10 +240,5 @@ dialog::backdrop {
     .counterDialog {
         font-size: 12px;
         margin: 0;
-    }
-
-    .footerDialog {
-        height: 48px;
-        align-items: center;
     }
 }

@@ -47,8 +47,8 @@ let ACTUAL_INDEX = 0;
 function renderImages(){
     const IMG_REF = document.getElementById('DioGallery');
 
-    for (let c= 0; c < DIO_IMAGES.length; c++){
-        IMG_REF.innerHTML += `<img id="DioImages" class="dioImages" aria-haspopup="dialog" aria-controls="DialogImg" onclick="openDialog(${c})" src="${DIO_IMAGES[c]}" alt="">`;
+    for (let i = 0; i < DIO_IMAGES.length; i++){
+        IMG_REF.innerHTML += `<img id="DioImages" class="dioImages" aria-haspopup="dialog" aria-controls="DialogImg" onclick="openDialog(${i})" src="${DIO_IMAGES[i]}" alt="">`;
     }
 }
 
